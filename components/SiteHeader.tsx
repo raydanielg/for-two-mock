@@ -21,9 +21,9 @@ export default function SiteHeader() {
         {/* Centre text */}
         <div className={styles.siteHeaderCenter}>
           <div className={styles.siteTitle}>
-            DISTRICT FORM TWO PRE-MOCK EXAMINATION
+            ILEMELA MUNICIPAL COUNCIL
           </div>
-          <div className={styles.siteSubtitle}>MARCH 2026</div>
+          <div className={styles.siteSubtitle}>DISTRICT FORM TWO PRE-MOCK EXAMINATION - MARCH 2026</div>
           <div className={styles.headerLinks}>
             <Link href="/" className={styles.navLink}>ALL CENTRES</Link>
             <Link href="/reports" className={styles.navLink}>REPORTS</Link>

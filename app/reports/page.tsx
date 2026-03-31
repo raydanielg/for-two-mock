@@ -16,17 +16,19 @@ export default function ReportsPage() {
   const getIcon = (reportId: string) => {
     switch (reportId) {
       case "school-ranks":
+      case "school-ranks-subjectwise":
+      case "best-schools":
+      case "wards-rank":
         return <Trophy size={24} />;
       case "subject-performance":
         return <BarChart size={24} />;
       case "mobility-analysis":
         return <PieChart size={24} />;
-      case "school-stats":
-        return <BookOpen size={24} />;
-      case "student-stats":
-        return <Users size={24} />;
-      case "district-ranks":
+      case "results-summary":
         return <FileText size={24} />;
+      case "student-stats":
+      case "best-students-subjectwise":
+        return <Users size={24} />;
       default:
         return <FileText size={24} />;
     }
