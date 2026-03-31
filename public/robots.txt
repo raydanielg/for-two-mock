@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ilemela-pre-mock-results.vercel.app/sitemap.xml
