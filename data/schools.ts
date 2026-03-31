@@ -37,7 +37,7 @@ export const schools: School[] = [
   { code: "S3534", name: "CENTRAL VALLEY SECONDARY SCHOOL", file: "results/S3534 - CENTRAL VALLEY SECONDARY SCHOOL.pdf" },
   { code: "S4049", name: "GREEN VIEW SECONDARY SCHOOL", file: "results/S4049 - GREEN VIEW SECONDARY SCHOOL.pdf" },
   { code: "S4062", name: "TABASAMU SECONDARY SCHOOL", file: "results/S4062 - TABASAMU SECONDARY SCHOOL.pdf" },
-  { code: "S4306", name: "EDEN SECONDARY SCHOOL", file: "results/S4306 - EDEN SECONDARY SCHOOL.pdf" },
+  { code: "S4504", name: "EDEN SECONDARY SCHOOL", file: "results/S4504- EDEN SECONDARY SCHOOL.pdf" },
   { code: "S4400", name: "ILEMELA ISLAMIC SECONDARY SCHOOL", file: "results/S4400 - ILEMELA ISLAMIC SECONDARY SCHOOL.pdf" },
   { code: "S4631", name: "EDEN VALLEY SECONDARY SCHOOL", file: "results/S4631 - EDEN VALLEY SECONDARY SCHOOL.pdf" },
   { code: "S4926", name: "KILIMANI SECONDARY SCHOOL", file: "results/S4926 - KILIMANI SECONDARY SCHOOL.pdf" },
