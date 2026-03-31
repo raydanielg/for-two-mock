@@ -4,11 +4,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "ILEMELA MC: DISTRICT FORM TWO PRE-MOCK EXAMINATION RESULTS 2026",
+    default: "ILEMELA MUNICIPAL COUNCIL: DISTRICT FORM TWO PRE-MOCK RESULTS 2026",
     template: "%s | ILEMELA MC RESULTS"
   },
   description:
-    "Official portal for Ilemela Municipal Council District Form Two Pre-MOCK Examination Results, March 2026. Access school rankings, subject performance, and individual school results.",
+    "Official examination results portal for Ilemela Municipal Council. View District Form Two Pre-MOCK Results 2026, school rankings, and subject performance analysis.",
   keywords: [
     "Matokeo ya Form Two 2026",
     "Ilemela Pre-MOCK Results 2026",
@@ -17,7 +17,8 @@ export const metadata: Metadata = {
     "Tanzania Form Two Results",
     "School Rankings Ilemela",
     "Education Statistics Tanzania",
-    "Pre-NECTA Form Two 2026"
+    "Pre-NECTA Form Two 2026",
+    "Ilemela MC Results Portal"
   ],
   authors: [{ name: "ILEMELA Municipal Council", url: "https://ilemela-pre-mock-results.vercel.app" }],
   creator: "Zerixa Technologies",
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     locale: "sw_TZ",
     url: "https://ilemela-pre-mock-results.vercel.app",
     title: "ILEMELA MC: DISTRICT FORM TWO PRE-MOCK RESULTS 2026",
-    description: "Pata matokeo yote ya District Form Two Pre-MOCK Examination Ilemela 2026. Rahisi, Haraka na Uhakika.",
+    description: "Pata matokeo yote ya District Form Two Pre-MOCK Examination Ilemela 2026. Rahisi, Haraka na Uhakika kupitia portal rasmi.",
     siteName: "ILEMELA MC RESULTS PORTAL",
     images: [
       {
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "ILEMELA MC: DISTRICT FORM TWO PRE-MOCK RESULTS 2026",
-    description: "Mfumo wa Matokeo ya District Form Two Pre-MOCK Examination Ilemela 2026. Rahisi na Haraka.",
+    description: "Mfumo rasmi wa Matokeo ya District Form Two Pre-MOCK Examination Ilemela 2026. Rahisi na Haraka.",
     images: ["/seo-image.png"],
     creator: "@zerixatech",
   },
@@ -70,6 +71,26 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  category: 'education',
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Ilemela Municipal Council",
+  "url": "https://ilemela-pre-mock-results.vercel.app",
+  "logo": "https://ilemela-pre-mock-results.vercel.app/logo/ngao.png",
+  "description": "Official examination portal for Ilemela Municipal Council District Form Two Pre-MOCK results.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mwanza",
+    "addressCountry": "TZ"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://ilemela-pre-mock-results.vercel.app/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
 };
 
 import SiteFooter from "@/components/SiteFooter";
@@ -80,8 +101,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="sw">
       <body style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <div style={{ flex: 1 }}>{children}</div>
         <SiteFooter />
         <Analytics />
